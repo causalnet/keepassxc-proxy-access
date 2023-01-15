@@ -680,7 +680,7 @@ public abstract class Connection implements AutoCloseable {
      * @param nonce The nonce to be incremented.
      * @return nonce "+1".
      */
-    private byte[] incrementNonce(byte[] nonce) {
+    static byte[] incrementNonce(byte[] nonce) {
         var c = 1;
         byte[] incrementedNonce = nonce.clone();
 
